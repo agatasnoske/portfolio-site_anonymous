@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+
+body {
+  font-family: "Archivo","Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+"wdth" 100;
+}
+
+#wrapper {
+  height: 100%;
+}
+
+#content-wrapper {
+  height: 100%;
+  padding-top: 48px;
+}
+
+.main {
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width:1079px) {
+  .main {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+}
+
+.fade {
+  height: 100%;
+  animation: fade 0.6s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+.top {
+    background: #fff;
+    height: 100%;
+
+    .main {
+        display: flex;
+        align-items: center;
+        .top-logo {
+            margin-top: -48px;
+        }
+    }
+}

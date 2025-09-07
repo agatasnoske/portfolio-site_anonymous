@@ -1,0 +1,295 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    background-image: repeating-linear-gradient(to right,#000 0,#000 10px,transparent 10px,transparent 15px);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    z-index: 100;
+    @media screen and (max-width: 1079px) {
+        background: none;
+        background-image: none;
+    }
+    .sp-icon {
+        display: none;
+        @media screen and (max-width: 1079px) {
+            display: block;
+            position: fixed;
+            top: 5px;
+            right: 15px;
+            width: 32px;
+            height: 32px;
+            z-index: 101;
+        }
+        .sp-icon-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            span {
+                position: absolute;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                margin: auto;
+                background: #000;
+                transform: rotate(0deg);
+                &:first-child {
+                    top: 10px;
+                }
+                &:last-child {
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            @media screen and (max-width:1079px) {
+                position: absolute;
+                top: 0;
+                right: -100%;
+                flex-direction: column;
+                width: 100%;
+                background: rgba(51,51,51,0.7);
+                padding-top: 37px;
+                z-index: 100;
+                transition: .3s;
+            }
+            li {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                @media screen and (max-width:1079px) {
+                    width: 100%;
+                    background-image: repeating-linear-gradient(to right,#fff 0,#fff 10px,transparent 10px,transparent 15px);
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto 0;
+                    width: 100%;
+                    height: 0px;
+                    background: #000;
+                    transition: .3s;
+                    z-index: 98;
+                    @media screen and (max-width:1079px) {
+                        content: none;
+                    }
+                }
+                a {
+                    position: relative;
+                    padding: 0px 64px;
+                    font-size: 32px;
+                    font-weight: 800;
+                    letter-spacing: -2px;
+                    transition: .3s;
+                    z-index: 99;
+                    @media screen and (max-width:1079px) {
+                        text-align: center;
+                        width: 100%;
+                        color: #fff;
+                        font-size: 20px;
+                        padding: 10px 0px;
+                    }
+                }
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                    &:after {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    &.open {
+        .sp-icon {
+            .sp-icon-wrap {
+                span {
+                    &:first-child {
+                        top: 0px;
+                        bottom: 0px;
+                        background: #fff;
+                        transform: rotate(45deg);
+                    }
+                    &:last-child {
+                        top: 0px;
+                        bottom: 0px;
+                        background: #fff;
+                        transform: rotate(-45deg)
+                    }
+                }
+            }
+        }
+        nav {
+            ul {
+                @media screen and (max-width:1079px) {
+                    right: 0;
+                }
+                li {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        position: relative;
+                        padding: 0px 64px;
+                        font-size: 32px;
+                        font-weight: 800;
+                        letter-spacing: -2px;
+                        transition: .3s;
+                        z-index: 99;
+                        @media screen and (max-width:1079px) {
+                            text-align: center;
+                            width: 100%;
+                            color: #fff;
+                            font-size: 20px;
+                            padding: 10px 0px;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            color: #fff;
+                        }
+                        &:after {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top {
+    Header {
+        li {
+            &.top-link {
+                a {
+                color: #fff;
+                }
+                &:after {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.profile {
+    Header {
+        background: #000;
+        background-image: repeating-linear-gradient(to right,#fff 0,#fff 10px,transparent 10px,transparent 15px);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+        @media screen and (max-width:1079px) {
+            background-image: none;            
+        }
+        .sp-icon {
+            @media screen and (max-width: 1079px) {
+            }
+            .sp-icon-wrap {
+                span {
+                    background: #fff;
+                }
+            }
+        }
+        li {
+            color: #fff;
+            &:after {
+                background: #fff;
+            }
+            &:hover {
+                a {
+                    color: #000;
+                }
+            }
+            &.profile-link {
+                a {
+                    color: #000;
+                    @media screen and (max-width:1079px) {
+                        color: #fff;
+                    }
+                }
+                &:after {
+                    background: #fff;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.works {
+    .works-link {
+        a {
+        color: #fff;
+        }
+        &:after {
+            height: 100%;
+        }
+    }
+}
+
+.contact {
+    Header {
+        background: #000;
+        background-image: repeating-linear-gradient(to right,#fff 0,#fff 10px,transparent 10px,transparent 15px);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+        @media screen and (max-width:1079px) {
+            background-image: none;            
+        }
+        .sp-icon {
+            @media screen and (max-width: 1079px) {
+            }
+            .sp-icon-wrap {
+                span {
+                    background: #fff;
+                }
+            }
+        }
+        li {
+            color: #fff;
+            &:after {
+                background: #fff;
+            }
+            &:hover {
+                a {
+                    color: #000;
+                }
+            }
+            &.contact-link {
+                a {
+                color: #000;
+                    @media screen and (max-width:1079px) {
+                        color: #fff;
+                    }
+                }
+                &:after {
+                    background: #fff;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
