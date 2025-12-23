@@ -11,6 +11,17 @@ export type WorkItem = {
 
 export const WorksUiuxData: WorkItem[] = [
     {
+    title: 'Sony Camera Verify Report',
+    period: '6ヶ月',
+    tool: 'Figma、Power Point',
+    image1: '/works/16/2.jpg',
+    image2: '',
+    image3:'',
+    description:
+        'AIを用いて撮影写真の真贋判定をするWebアプリケーションのUI/UXデザイン開発に携わりました。特に"写真が本物である"と認定後に発行される証明書のデザイン改修はほぼ一人称で進めました。お客様とのブレストを通して、ご要望としては"証明書として箔がつくようなデザイン"というキーワードがありましたので、まずはそれを元にデザインの制作。細かなレビューや打ち合わせを通して抽象的だったご要望を具体的なものへと変えていく、最終的には"素晴らしいものができた！"と太鼓判をいただきました。誰もが知る大手企業様の中で自身のデザインが採用され活用されていることを大変光栄に思いつつ、業務を通して大きな経験を積むことができました',
+    thumb: '/works/16/1.jpg',
+    },
+    {
     title: 'Golden List',
     period: '2ヶ月',
     tool: 'Figma',
