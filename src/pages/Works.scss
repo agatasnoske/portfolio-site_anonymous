@@ -89,6 +89,7 @@
             }
             .worksitems {
                 display: flex;
+                flex-wrap: wrap;
                 margin-right: -12px;
                 margin-bottom: -12px;
                     @media screen and (max-width:1079px) {
@@ -98,7 +99,7 @@
                     font-family: "Noto sans JP", sans-serif;
                     position: relative;
                     aspect-ratio: 1 / 1;
-                    width: calc((100% - 14px) / 4);
+                    width: calc(100% / 4 - 12px);
                     margin-right: 12px;
                     margin-bottom: 12px;
                     cursor: pointer;
