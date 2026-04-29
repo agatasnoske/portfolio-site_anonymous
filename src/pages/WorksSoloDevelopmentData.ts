@@ -42,8 +42,8 @@ export const WorksSoloDevelopmentData: WorkItem[] = [
     cms: 'Wordpress',
     other: 'Docker',
     image1: '/works/18/pc.jpg',
-    image2: '/works/18/sp.jpg',
-    image3: '',
+    image2: '',
+    image3: '/works/18/sp.jpg',
     description:
         '要件定義〜UI/UXデザイン〜コーディングまでを一人称で実施するLP制作案件を請負で実施いたしました。マンション設備に関連するアプリケーションのLPで、主にマンション設備会社様やマンションオーナー様と共にマンション居住者様もターゲットに含め、toB向け、toC向け双方の意匠を纏ったデザインを心がけました。',
     thumb: '/works/18/pc.jpg',
